@@ -15,8 +15,10 @@ const TodoLists = () => {
         <div className='mt-10 '>
             {
                 !todos.length && <>
-                    <p>There is no task to do for you.</p>
-                    <p>If you think of any task that needs to be done then add task filling up the form given above. Thanks!</p>
+                    <div className='w-full md:w-3/4 xl:w-1/2 mx-auto shadow-lg rounded-lg border mb-6 p-4 text-gray-800'>
+                        <p className='text-lg'>There is no task to do for you.</p>
+                        <p className='text-lg'>If you think of any task that needs to be done then add task by filling up the form given above. Thanks!</p>
+                    </div>
                 </>
             }
             {
